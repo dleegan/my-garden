@@ -16,6 +16,11 @@
 		539881132A9557A30007AE88 /* my_gardenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539881122A9557A30007AE88 /* my_gardenTests.swift */; };
 		5398811D2A9557A30007AE88 /* my_gardenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398811C2A9557A30007AE88 /* my_gardenUITests.swift */; };
 		5398811F2A9557A30007AE88 /* my_gardenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398811E2A9557A30007AE88 /* my_gardenUITestsLaunchTests.swift */; };
+		5398812E2A95587E0007AE88 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398812C2A95587E0007AE88 /* Plant.swift */; };
+		5398812F2A95587E0007AE88 /* PlantList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398812D2A95587E0007AE88 /* PlantList.swift */; };
+		539881372A95588B0007AE88 /* PlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539881312A95588B0007AE88 /* PlantCell.swift */; };
+		539881382A95588B0007AE88 /* EditPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539881342A95588B0007AE88 /* EditPlant.swift */; };
+		539881392A95588B0007AE88 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539881362A95588B0007AE88 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		539881182A9557A30007AE88 /* my-gardenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "my-gardenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5398811C2A9557A30007AE88 /* my_gardenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_gardenUITests.swift; sourceTree = "<group>"; };
 		5398811E2A9557A30007AE88 /* my_gardenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_gardenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5398812C2A95587E0007AE88 /* Plant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		5398812D2A95587E0007AE88 /* PlantList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantList.swift; sourceTree = "<group>"; };
+		539881312A95588B0007AE88 /* PlantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantCell.swift; sourceTree = "<group>"; };
+		539881342A95588B0007AE88 /* EditPlant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPlant.swift; sourceTree = "<group>"; };
+		539881362A95588B0007AE88 /* HomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,9 @@
 		539880FA2A9557A00007AE88 /* my-garden */ = {
 			isa = PBXGroup;
 			children = (
+				539881302A95588B0007AE88 /* Components */,
+				539881322A95588B0007AE88 /* Screens */,
+				5398812B2A95587E0007AE88 /* Models */,
 				539880FB2A9557A00007AE88 /* my_gardenApp.swift */,
 				539880FD2A9557A00007AE88 /* Persistence.swift */,
 				539881022A9557A00007AE88 /* ContentView.swift */,
@@ -133,6 +146,48 @@
 				5398811E2A9557A30007AE88 /* my_gardenUITestsLaunchTests.swift */,
 			);
 			path = "my-gardenUITests";
+			sourceTree = "<group>";
+		};
+		5398812B2A95587E0007AE88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5398812C2A95587E0007AE88 /* Plant.swift */,
+				5398812D2A95587E0007AE88 /* PlantList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		539881302A95588B0007AE88 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				539881312A95588B0007AE88 /* PlantCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		539881322A95588B0007AE88 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				539881332A95588B0007AE88 /* Sub */,
+				539881352A95588B0007AE88 /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		539881332A95588B0007AE88 /* Sub */ = {
+			isa = PBXGroup;
+			children = (
+				539881342A95588B0007AE88 /* EditPlant.swift */,
+			);
+			path = Sub;
+			sourceTree = "<group>";
+		};
+		539881352A95588B0007AE88 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				539881362A95588B0007AE88 /* HomeScreen.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,10 +320,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539881372A95588B0007AE88 /* PlantCell.swift in Sources */,
 				539881012A9557A00007AE88 /* my_garden.xcdatamodeld in Sources */,
+				5398812F2A95587E0007AE88 /* PlantList.swift in Sources */,
 				539880FC2A9557A00007AE88 /* my_gardenApp.swift in Sources */,
+				5398812E2A95587E0007AE88 /* Plant.swift in Sources */,
+				539881392A95588B0007AE88 /* HomeScreen.swift in Sources */,
 				539881032A9557A00007AE88 /* ContentView.swift in Sources */,
 				539880FE2A9557A00007AE88 /* Persistence.swift in Sources */,
+				539881382A95588B0007AE88 /* EditPlant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
