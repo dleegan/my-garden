@@ -15,37 +15,8 @@ struct ContentView: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
-
-//    var body: some View {
-//        NavigationView {
-//            List {
-//                ForEach(items) { item in
-//                    NavigationLink {
-//                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-//                    } label: {
-//                        Text(item.timestamp!, formatter: itemFormatter)
-//                    }
-//                }
-//                .onDelete(perform: deleteItems)
-//            }
-//            .toolbar {
-//#if os(iOS)
-//                ToolbarItem(placement: .navigationBarTrailing) {
-//                    EditButton()
-//                }
-//#endif
-//                ToolbarItem {
-//                    Button(action: addItem) {
-//                        Label("Add Item", systemImage: "plus")
-//                    }
-//                }
-//            }
-//            Text("Select an item")
-//        }
-//    }
-    
     @State private var selectedTab = 0
-    
+
     var body: some View {
         TabView(selection: $selectedTab) {
             HomeScreen()
@@ -53,13 +24,13 @@ struct ContentView: View {
                     Image("home-icon\(selectedTab == 0 ? "-selected" : "")")
                 }
                 .tag(0)
-            
+
             Text("ListScreen")
                 .tabItem {
                     Image("garden-icon\(selectedTab == 1 ? "-selected" : "")")
                 }
                 .tag(1)
-            
+
             Text("SettingsScreen")
                 .tabItem {
                     Image("calendar-icon\(selectedTab == 2 ? "-selected" : "")")
